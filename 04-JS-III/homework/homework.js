@@ -30,7 +30,7 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
   for (let i = 0; i < array.length; i++) {
-    array[i] = array[i] + 1;    
+    array[i] = array[i] + 1;
   }
   return array;
 }
@@ -75,7 +75,7 @@ function arrayContiene(array, elemento) {
   // Tu código:
   if (array.includes(elemento)) {
     return true;
-  }else{
+  } else {
     return false;
   }
 }
@@ -87,7 +87,7 @@ function agregarNumeros(numeros) {
   // Tu código:
   let suma = 0;
   for (let i = 0; i < numeros.length; i++) {
-    suma += numeros[i];    
+    suma += numeros[i];
   }
   return suma;
 }
@@ -100,10 +100,10 @@ function promedioResultadosTest(resultadosTest) {
   let suma = 0;
   let nElem = resultadosTest.length
   for (let i = 0; i < resultadosTest.length; i++) {
-    suma += resultadosTest[i];    
+    suma += resultadosTest[i];
   }
 
-  return (suma/nElem);
+  return (suma / nElem);
 }
 
 
@@ -120,20 +120,20 @@ function multiplicarArgumentos() {
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
 
- let args = [...arguments];
- let producto = 1;
- if (args.length === 0) {
-   return 0;
- }
- for (let i = 0; i < args.length; i++) {
-     producto = producto * args[i];
- }
+  let args = [...arguments];
+  let producto = 1;
+  if (args.length === 0) {
+    return 0;
+  }
+  for (let i = 0; i < args.length; i++) {
+    producto = producto * args[i];
+  }
 
- return producto;
+  return producto;
 }
 
 
-function cuentoElementos(arreglo){
+function cuentoElementos(arreglo) {
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
   let contador = 0;
@@ -142,7 +142,7 @@ function cuentoElementos(arreglo){
       ++contador;
     }
   }
- return contador;
+  return contador;
 }
 
 
@@ -153,10 +153,10 @@ function diaDeLaSemana(numeroDeDia) {
   //Escribe tu código aquí   
   if (numeroDeDia === 1 || numeroDeDia === 7) {
     return "Es fin de semana";
-  }else{
+  } else {
     return "Es dia Laboral";
   }
-} 
+}
 
 
 function empiezaConNueve(n) {
@@ -166,7 +166,7 @@ function empiezaConNueve(n) {
   let numero = n.toString();
   if (numero[0] === '9') {
     return true;
-  }else{
+  } else {
     return false;
   }
 }
@@ -176,14 +176,14 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  let comparador = arreglo[0]; 
+  let comparador = arreglo[0];
   for (let i = 0; i < arreglo.length; i++) {
-    if(comparador !== arreglo[i]){
+    if (comparador !== arreglo[i]) {
       return false;
     }
   }
-    return true;
-} 
+  return true;
+}
 
 
 function mesesDelAño(array) {
@@ -191,18 +191,18 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-  let mesesBuscar = ['Enero','Marzo','Noviembre']
+  let mesesBuscar = ['Enero', 'Marzo', 'Noviembre']
   let datosEncontrados = [];
 
   for (let a = 0; a < array.length; a++) {
     for (let b = 0; b < mesesBuscar.length; b++) {
-        if(array[a] === mesesBuscar[b]){ datosEncontrados.push(array[a])}
+      if (array[a] === mesesBuscar[b]) { datosEncontrados.push(array[a]) }
     }
-}
-  
+  }
+
   if (mesesBuscar.length === datosEncontrados.length) {
     return datosEncontrados;
-  }else{
+  } else {
     return "No se encontraron los meses pedidos";
   }
 }
@@ -232,15 +232,15 @@ function breakStatement(numero) {
   // Tu código:
   let numeroInicial = numero;
   let resultado = [];
-    for (let i = 1; i <= 10; i++) {
-      numeroInicial += 2;
-      resultado.push(numeroInicial);
-      if (numeroInicial === i) {
-        return "Se interrumpió la ejecución";
-        break;
-      }
+  for (let i = 1; i <= 10; i++) {
+    numeroInicial += 2;
+    resultado.push(numeroInicial);
+    if (numeroInicial === i) {
+      return "Se interrumpió la ejecución";
+      break;
     }
-    return resultado;
+  }
+  return resultado;
 }
 
 
@@ -253,16 +253,16 @@ function continueStatement(numero) {
   // Tu código:
   let numeroInicial = numero;
   let resultado = [];
-    for (let i = 1; i <= 10; i++) {
-      if (i === 5) {
-        continue;
-      }
-      numeroInicial += 2;
-      resultado.push(numeroInicial);
+  for (let i = 1; i <= 10; i++) {
+    if (i === 5) {
+      continue;
     }
-    return resultado;
+    numeroInicial += 2;
+    resultado.push(numeroInicial);
+  }
+  return resultado;
 }
-
+/**Todo listo para ser agregado al git */
 
 // No modificar nada debajo de esta línea
 // --------------------------------
